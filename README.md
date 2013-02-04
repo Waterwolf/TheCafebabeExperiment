@@ -11,3 +11,8 @@ CommandTools hosts a command line argument parser that allows quickly searching 
 
 ##Utilities
 Utilities consists of commonly used classes such as CafeGlob (custom glob syntax especially for bytecode processing) and ClassPackage.
+
+
+#Compiling the project
+
+To compile the project, you will need scala and ASM-all libraries.
