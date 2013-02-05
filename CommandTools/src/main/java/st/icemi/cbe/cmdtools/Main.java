@@ -12,7 +12,6 @@ import st.icemi.cbe.util.matchers.PatternMatcher;
 import st.icemi.cbe.util.matchers.RegexMatcher;
 
 import java.io.File;
-import java.util.Arrays;
 
 /**
  * Created with IntelliJ IDEA.

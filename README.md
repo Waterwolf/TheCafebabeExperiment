@@ -23,4 +23,4 @@ Example usage:
 
     java -jar commandtools.jar findpattern "GETSTATIC{?, out, ?} LDC INVOKEVIRTUAL{?, println, ?}"
 
-    This would search current folder (non-recursively unless -r flag is specified) for class files containing given bytecode pattern. Bytecode pattern uses custom CafeGlob syntax, which you can find from https://github.com/Waterwolf/TheCafebabeExperiment/blob/master/Utilities/src/st/icemi/cbe/util/bytecode/matchers/cafeglob/CafeGlob.scala at the moment.
+This would search current folder (non-recursively unless -r flag is specified) for class files containing given bytecode pattern. Bytecode pattern uses custom CafeGlob syntax, which you can find from https://github.com/Waterwolf/TheCafebabeExperiment/blob/master/Utilities/src/st/icemi/cbe/util/bytecode/matchers/cafeglob/CafeGlob.scala at the moment.

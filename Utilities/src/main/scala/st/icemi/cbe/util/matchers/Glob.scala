@@ -62,7 +62,7 @@ import st.icemi.cbe.util.glob.{InvalidPatternException, CharStream}
  * Copied from
  * <a href='http://download.oracle.com/javase/tutorial/essential/io/fileOps.html#glob'>What Is a glob?</a>.
  *
- * Original file: https://github.com/Arnauld/Steam/blob/master/src/main/scala/steam/util/glob.scala
+ * Original file: https://github.com/Arnauld/Steam/blob/master/src/main/java/steam/util/glob.java
  *
  */
 object Glob {
