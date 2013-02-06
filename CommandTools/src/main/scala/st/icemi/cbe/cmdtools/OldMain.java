@@ -20,7 +20,7 @@ import java.io.File;
  * Time: 18:55
  * To change this template use File | Settings | File Templates.
  */
-public class Main {
+public class OldMain {
     public static void main(String[] args) {
         parseArgs(args);
     }
@@ -34,7 +34,7 @@ public class Main {
     }
 
     public static boolean parseArgs(String[] args) {
-
+/*
         ArgParser parser = new ArgParser(args);
 
         String pri = parser.forward();
@@ -108,6 +108,9 @@ public class Main {
 
         error("No arguments were given. Type \"help\" to get list of commands.");
         return false;
+        */
+        return false;
     }
+
 
 }
