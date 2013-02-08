@@ -15,7 +15,7 @@ Utilities consists of commonly used classes such as CafeGlob (custom glob syntax
 
 #Compiling the project
 
-To compile the project, you will need scala and ASM-all libraries.
+To compile the project, you will need scala, scopt and ASM-all libraries.
 
 #Using CommandTools
 
