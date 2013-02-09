@@ -21,4 +21,8 @@ public class test {
     public static void errPrint() {
         System.err.print("Hello, world!");
     }
+
+    public static void main(String[] args) {
+        System.out.println("-nYEES");
+    }
 }

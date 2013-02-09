@@ -15,7 +15,15 @@ import st.icemi.cbe.util.bytecode.Searcher
 class ClassPackage(name:String = "default") {
   private val classes:mutable.Map[String, ClassNode] = mutable.Map()
 
-  def +=(node:ClassNode) = classes +=(node.name -> node)
+  def +=(node: ClassNode) = classes +=(node.name -> node)
+
+  /**
+   * Adds classes from provided ClassPackage to this ClassPackage. Classes with same name might result in undefined behavior.
+   * @param pack
+   * @return
+   */
+  def +=(pack: ClassPackage) = classes ++= pack.classes.toList
+
   def foreach(mfunc:(ClassNode => Unit)) = classes foreach (p => mfunc(p._2))
 
   def search(matcher: BytecodePatternMatcher) = {
