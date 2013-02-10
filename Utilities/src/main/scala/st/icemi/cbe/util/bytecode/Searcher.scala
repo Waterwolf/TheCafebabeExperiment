@@ -3,6 +3,7 @@ package st.icemi.cbe.util.bytecode
 import matchers.{BytecodePatternMatcher, BytecodeMatch}
 import org.objectweb.asm.tree.{MethodNode, ClassNode}
 import scala.collection.JavaConversions._
+import st.icemi.cbe.util.pack.ClassPackage
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,9 +18,9 @@ object Searcher {
     node.methods foreach (mnode => matches ++= matcher.search(node, mnode.asInstanceOf[MethodNode]))
     return matches.toList
   }
-  def findAllMatches(matcher: BytecodePatternMatcher, nodes:ClassNode*):List[BytecodeMatch] = {
+  def findAllMatches(matcher: BytecodePatternMatcher, pack: ClassPackage):List[BytecodeMatch] = {
     val matches = collection.mutable.ListBuffer[BytecodeMatch]()
-    nodes foreach (node => matches ++= findMatches(matcher, node))
+    pack foreach (node => matches ++= findMatches(matcher, node))
     return matches.toList
   }
 }
