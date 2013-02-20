@@ -72,11 +72,6 @@ object Loader {
       protected def getInputStream(): InputStream = new FileInputStream(file)
     }
 
-    implicit def stringToLoadable(str: String): Loadable = str match {
-      case str if str.startsWith("http://") => LoadableUrl(new URL(str))
-    }
-
-    implicit def fileToLoadable(file: File): Loadable = LoadableFile(file)
   }
 
 }
